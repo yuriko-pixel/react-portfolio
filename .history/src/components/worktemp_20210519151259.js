@@ -20,7 +20,7 @@ const WorkTemp = ()=> {
             </div>
             <h2 className={workts.title}>{item.name}</h2>
             <div>
-                {item.skillstacks.split(",").map(i=><img src={i} alt={i}/>)}
+                {item.skillstacks.split(",").map(i=><img src={i}/>)}
             </div>
             <h3>{item.intro}</h3>
             <div className={workts.desc}>{item.desc}</div>
