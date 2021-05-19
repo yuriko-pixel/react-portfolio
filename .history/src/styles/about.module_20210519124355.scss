@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+
+.container {font-family: 'Dosis', sans-serif;
+   height: 100vh;
+}
+.profimg {
+    width:200px;
+	height:200px;
+	object-fit:cover;
+	border-radius:50%;
+    border: 1px solid black;
+}

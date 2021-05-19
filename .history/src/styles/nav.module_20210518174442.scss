@@ -1,0 +1,107 @@
+.list-unstyled{
+    list-style: none;
+  }
+  .d-none{
+    display: none;
+  }
+  .d-flex{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  #top-editarea{
+    overflow: hidden;
+  }
+  .header-nav{
+    background: #47a89c;
+    padding: 1em;
+  }
+  .header-nav a{
+    color: #fff;
+  }
+  
+  @media screen and (max-width: 480px){
+    .wrap {
+        display: none;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 999;
+        background: white;
+        box-shadow: 0 0 1px #333;
+      }
+      .wrap2 {
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+        background: #47a89c;
+    padding: 1em;
+
+      }
+    .sp-none{
+      display: none;
+    }
+    .sp-block{
+      display: block;
+    }
+    .nav-icon-wrap{
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 999;
+      background: white;
+      box-shadow: 0 0 1px #333;
+    }
+    .nav-icon{
+      position: relative;
+      display: block;
+      width: 1.7em;
+      height: 1.7em;
+    }
+    .nav-icon::before, .nav-icon::after{
+      content: "";
+      display: block;
+      width: 60%;
+      border-top: 1px solid #555;
+      position: absolute;
+      top: 30%;
+      left: 20%;
+      transition: .3s all;
+    }
+    .nav-icon::after{
+      top: 70%;
+    }
+    .header-nav-wrap{
+      display: block;
+      position: relative;
+      top: 0;
+      left: 100%;
+      transition: all .4s;
+      width: 100%;
+      z-index: 990;
+    }
+    .header-nav{
+      margin: 0;
+    }
+    #main-nav:checked ~ nav{
+      display: block;
+      left: 0;
+    }
+    #main-nav:checked ~ .nav-icon-wrap>.nav-icon::before{
+      top: 50%;
+      transform: rotate(45deg);
+    }
+    #main-nav:checked ~ .nav-icon-wrap>.nav-icon::after{
+      top: 50%;
+      transform: rotate(-45deg);
+    }
+    .header-nav{
+      flex-direction: column;
+      background: #47a89c;
+      padding: 1em;
+    }
+    .header-nav a{
+      color: #fff;
+    }
+  }

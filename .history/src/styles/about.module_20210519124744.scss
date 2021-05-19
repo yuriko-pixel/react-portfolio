@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+.container {
+    height: 100vh;
+}
+.profimg {
+    width:200px;
+	height:200px;
+	object-fit:cover;
+	border-radius:50%;
+    border: 1px solid black;
+}
+
+.box {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+}

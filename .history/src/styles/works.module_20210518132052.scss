@@ -1,0 +1,31 @@
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    background-image: url(../images/footprint.png);
+    background-size: 100%;
+}
+
+.workimg {
+    width: 300px;
+    margin: 5px 10px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+@media screen and (max-width: 959px) {
+	/* 959px以下に適用されるCSS（タブレット用） */
+}
+@media screen and (max-width: 480px) {
+	.container {
+        width: 400px;
+    }
+
+    .workimg {
+        width: 350px;
+        margin: 5px;
+    }
+}

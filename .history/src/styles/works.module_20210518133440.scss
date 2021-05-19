@@ -1,0 +1,60 @@
+
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    background-image: url(../images/footprint.png);
+    background-size: 100%;
+}
+
+.work-con {
+    width: 250px;
+    height: 175px;
+    position: relative;
+    overflow: hidden;
+}
+
+.mask {
+    position:		absolute;	/* 絶対位置指定 */
+	top:			0;
+	left:			0;
+	opacity:		0;	/* マスクを表示しない */
+	background-color:	rgba(0,0,0,0.4);	/* マスクは半透明 */
+	-webkit-transition:	all 0.2s ease;
+	transition:		all 0.2s ease;
+}
+.hoverMask {
+
+	text-align: 		center;
+	padding-top:		80px;
+	color:			#fff;
+}
+
+.hover-mask:hover {
+    opacity: 1;
+    transition:all 0.6s ease;
+}
+.workimg {
+    width: 300px;
+    margin: 5px 10px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+@media screen and (max-width: 959px) {
+	/* 959px以下に適用されるCSS（タブレット用） */
+}
+@media screen and (max-width: 480px) {
+	.container {
+        width: 400px;
+    }
+
+    .workimg {
+        width: 350px;
+        margin: 5px;
+    }
+}

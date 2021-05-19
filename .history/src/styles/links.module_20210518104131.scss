@@ -1,0 +1,21 @@
+
+
+a, a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.linkcontainer1, .linkcontainer2, .linkcontainer3 {
+    width: 100px;
+    padding: 5px;
+    background: pink;
+    border: 1px solid black;
+} 
+
+.linkcontainer1 {
+    border-radius: 50% 0 0 50%;
+}
+
+.linkcontainer3 {
+    border-radius: 0 50% 50% 0;
+}
