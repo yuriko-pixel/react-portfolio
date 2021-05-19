@@ -39,19 +39,19 @@ const About = () => {
                 <div className={profs.title}>What I like</div>
                 <div className={profs.likes}>
                     <div className={profs.flex}>
-                        <img src="https://img.icons8.com/color/48/000000/harry-potter-.png" alt="icon" />
+                        <img src="https://img.icons8.com/color/48/000000/harry-potter-.png"/>
                         <span className={profs.liketitle}>Harry Potter</span>
                     </div>
                     <div className={profs.flex}>
-                        <img src="https://img.icons8.com/color/48/000000/airplane-take-off--v1.png" alt="icon" />
+                        <img src="https://img.icons8.com/color/48/000000/airplane-take-off--v1.png"/>
                         <span className={profs.liketitle}>Traveling</span>
                     </div>
                     <div className={profs.flex}>
-                        <img src="https://img.icons8.com/color/48/000000/bird-above.png" alt="icon" />
+                        <img src="https://img.icons8.com/color/48/000000/bird-above.png"/>
                         <span className={profs.liketitle}>Cat</span>
                     </div>
                     <div className={profs.flex}>
-                        <img src="https://img.icons8.com/color/48/000000/reading-unicorn.png" alt="icon" />
+                        <img src="https://img.icons8.com/color/48/000000/reading-unicorn.png"/>
                         <span className={profs.liketitle}>Reading</span>
                     </div>
                 </div>
