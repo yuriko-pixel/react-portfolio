@@ -6,6 +6,17 @@ const Qiita = () => {
     const [articles, setArticles] = useState([]);
 
     const key = process.env.REACT_APP_QIITA_KEY;
+    const dataFetch = async ()=> {
+        await( await fetch('https://qiita.com/api/v2/authenticated_user/items', {method:'GET', 
+            headers: {
+                'Authorization': 'Bearer ' + key,
+                'Content-Type': 'application/json'
+            }})
+                .then(response => response.json())
+                .then(json => {
+                    console.log(json)
+                    return json;}))
+    };
     useEffect(() => {
         const getData = async() => {
             // const blogs =  await dataFetch();
@@ -17,7 +28,7 @@ const Qiita = () => {
                 .then(response => response.json())
                 .then(json => {
                     console.log(json);
-                    setArticles(json);
+                    setArticles(blogs);
                 })
           };
 
