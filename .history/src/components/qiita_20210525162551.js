@@ -6,25 +6,20 @@ const Qiita = () => {
     const [articles, setArticles] = useState([]);
 
     const key = process.env.REACT_APP_QIITA_KEY;
-    const dataFetch = async ()=> {
-        await( await fetch('https://qiita.com/api/v2/authenticated_user/items', {method:'GET', 
+    const dataFetch = useMemo(()=> {
+        fetch('https://qiita.com/api/v2/authenticated_user/items', {method:'GET', 
             headers: {
                 'Authorization': 'Bearer ' + key,
                 'Content-Type': 'application/json'
             }})
                 .then(response => response.json())
-                .then(json => {return json;}))
-    };
-    useEffect(() => {
-        const getData = async() => {
-            const blogs =  await dataFetch();
-            setArticles(blogs);
-          };
-          getData();
-    },[])
-
+                .then(json => {
+                    setArticles(json);}
+                    )
+    });
+    useEffect(() => dataFetch,[])
     let data;
-    if( articles !== undefined ) {
+    if(articles.length !== 0) {
         data = articles.map(item => (
         <a href={item.url} className={style.wrapper} target="_blank" rel="noopener noreferrer" key={Math.random()}>
             <h3>{item.title}</h3>

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import style from '../styles/qiita.module.scss'
 import Moment from 'react-moment';
 
@@ -6,14 +6,16 @@ const Qiita = () => {
     const [articles, setArticles] = useState([]);
 
     const key = process.env.REACT_APP_QIITA_KEY;
-    const dataFetch = async ()=> {
-        await( await fetch('https://qiita.com/api/v2/authenticated_user/items', {method:'GET', 
+    const dataFetch = ()=> {
+        fetch('https://qiita.com/api/v2/authenticated_user/items', {method:'GET', 
             headers: {
                 'Authorization': 'Bearer ' + key,
                 'Content-Type': 'application/json'
             }})
                 .then(response => response.json())
-                .then(json => {return json;}))
+                .then(json => {
+                    setArticles(json);}
+                    )
     };
     useEffect(() => {
         const getData = async() => {

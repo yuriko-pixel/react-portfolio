@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import style from '../styles/qiita.module.scss'
 import Moment from 'react-moment';
 
@@ -13,7 +13,9 @@ const Qiita = () => {
                 'Content-Type': 'application/json'
             }})
                 .then(response => response.json())
-                .then(json => {return json;}))
+                .then(json => {
+                    setArticles(json);}
+                    ))
     };
     useEffect(() => {
         const getData = async() => {
