@@ -1,0 +1,53 @@
+.qiitacontainer {
+    width: 90%;
+    margin: 30px auto;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wrapper {
+    width: 300px;
+    background: white;
+    border: solid lightgreen 3px;
+    margin: 5px 15px;
+    border-radius: 10px;
+    text-align: left;
+    padding: 5px 10px;
+    min-height: 300px;
+}
+
+.wrapper:hover {
+    box-shadow: 0 15px 30px -5px rgba(0,0,0,.15), 0 0 5px rgba(0,0,0,.1);
+	transform: translateY(-4px);
+    
+}
+
+.tags {
+    border: green solid 1px;
+    margin: 2px 3px;
+    padding: 2px;
+    border-radius: 2px;
+}
+
+.blogbody {
+    margin-top: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.profile {
+    width: 30px;
+    border-radius: 50%;
+}
+
+.date {
+    margin: 10px 0;
+}
+
+.username {
+    margin: 10px 0 0 10px;
+}

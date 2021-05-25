@@ -1,0 +1,22 @@
+.qiitacontainer {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.wrapper {
+    width: 300px;
+    background: white;
+    border: solid lightgray 1px;
+    margin: 5px 10px;
+    border-radius: 10px;
+}
+
+.wrapper:hover {
+    box-shadow: 0 15px 30px -5px rgba(0,0,0,.15), 0 0 5px rgba(0,0,0,.1);
+	transform: translateY(-4px);
+    
+}
