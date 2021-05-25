@@ -14,13 +14,14 @@ const Qiita = () => {
       }})
         .then(response => response.json())
         .then(json => {
-            setArticles(json);}
+            setArticles(json);
+            console.log(json)}
             )
     },[])
     let data;
     if(articles.length !== 0) {
         data = articles.map(item => (
-        <a href={item.url} className={style.wrapper} target="_blank" rel="noopener noreferrer" key={Math.random()}>
+        <a href={item.url} className={style.wrapper} target="_blank" rel="noopener noreferrer">
             <h3>{item.title}</h3>
             <div className={style.flex}>
                 <img src={item.user.profile_image_url} alt="profile" className={style.profile} />
