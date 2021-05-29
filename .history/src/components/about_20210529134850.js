@@ -6,8 +6,8 @@ import Link from './links'
 const HP = {'character': 'Luna Lovegood', 'favSeries':'Prizoner of Azkaban'};
 const travel = {'have visited': ['UK ,', 'LA ,','AUS ,', 'Netherland'], 'wantToVist': ['Germany ,', 'UAE']};
 
-const cat = {'type': ['Munchkin ,', ' American Shorthair']}
-const booktitle = {'title': ['HarryPotter,' , ' Sherlock Holmes, ', ' Gone Girl']};
+const cat = {'name': ['Munchkin', 'American Shorthair']}
+const booktitle = {'title': 'HarryPotter , Sherlock Holmes'};
 
 const About = () => {
     return (
@@ -73,24 +73,15 @@ const About = () => {
                         <span className={profs.liketitle}>Cat</span>
                     </div>
                     <div className={profs.likedesc}>
-                        <div className={profs.flexcolumn}>
-                            {Object.keys(cat).map(item => <p className={profs.title2}>{item}:</p>)}
-                        </div>
-                        <div className={profs.flexcolumn2}>
-                        {Object.values(cat).map(item => <p>{item}</p>)}
-                        </div>
+                        {cat}
                     </div>
                     <div className={profs.flex}>
                         <img src="https://img.icons8.com/color/48/000000/reading-unicorn.png" alt="icon"    />
                         <span className={profs.liketitle}>Reading</span>
                     </div>
                     <div className={profs.likedesc}>
-                        <div className={profs.flexcolumn}>
-                            {Object.keys(booktitle).map(item => <p className={profs.title2}>{item}:</p>)}
-                        </div>
-                        <div className={profs.flexcolumn2}>
-                        {Object.values(booktitle).map(item => <p>{item}</p>)}
-                        </div>
+                        {booktitle}
+                        <br/>
                     </div>
                 </div>
             </div>

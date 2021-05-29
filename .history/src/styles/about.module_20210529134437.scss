@@ -12,12 +12,13 @@
 .flexcolumn {
     display: flex;
     flex-direction: column;
-    margin-right: 20px;
+    
 }
 
 .flexcolumn2 {
     display: flex;
     flex-direction: column;
+    flex: 2;
 }
 .title2 {
     color: #DF8095

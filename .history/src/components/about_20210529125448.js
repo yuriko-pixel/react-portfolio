@@ -3,11 +3,7 @@ import profs from '../styles/about.module.scss'
 import img from '../images/profile.JPG'
 import Link from './links'
 
-const HP = {'character': 'Luna Lovegood', 'favSeries':'Prizoner of Azkaban'};
-const travel = {'have visited': ['UK ,', 'LA ,','AUS ,', 'Netherland'], 'wantToVist': ['Germany ,', 'UAE']};
-
-const cat = {'type': ['Munchkin ,', ' American Shorthair']}
-const booktitle = {'title': ['HarryPotter,' , ' Sherlock Holmes, ', ' Gone Girl']};
+const HP = "const characterILike = {'name': 'Luna Lovegood'};";
 
 const About = () => {
     return (
@@ -49,48 +45,19 @@ const About = () => {
                         <span className={profs.liketitle}>Harry Potter</span>
                     </div>
                     <div className={profs.likedesc}>
-                        <div className={profs.flexcolumn}>
-                            {Object.keys(HP).map(item => <p className={profs.title2}>{item}:</p>)}
-                        </div>
-                        <div className={profs.flexcolumn2}>
-                        {Object.values(HP).map(item => <p>{item}</p>)}
-                        </div>
+                        {HP}
                     </div>
                     <div className={profs.flex}>
                         <img src="https://img.icons8.com/color/48/000000/airplane-take-off--v1.png" alt="icon" />
                         <span className={profs.liketitle}>Traveling</span>
                     </div>
-                    <div className={profs.likedesc}>
-                        <div className={profs.flexcolumn}>
-                            {Object.keys(travel).map(item => <p className={profs.title2}>{item}:</p>)}
-                        </div>
-                        <div className={profs.flexcolumn2}>
-                        {Object.values(travel).map(item => <p>{item}</p>)}
-                        </div>
-                    </div>
                     <div className={profs.flex}>
                         <img src="https://img.icons8.com/color/48/000000/bird-above.png" alt="icon" />
                         <span className={profs.liketitle}>Cat</span>
                     </div>
-                    <div className={profs.likedesc}>
-                        <div className={profs.flexcolumn}>
-                            {Object.keys(cat).map(item => <p className={profs.title2}>{item}:</p>)}
-                        </div>
-                        <div className={profs.flexcolumn2}>
-                        {Object.values(cat).map(item => <p>{item}</p>)}
-                        </div>
-                    </div>
                     <div className={profs.flex}>
                         <img src="https://img.icons8.com/color/48/000000/reading-unicorn.png" alt="icon"    />
                         <span className={profs.liketitle}>Reading</span>
-                    </div>
-                    <div className={profs.likedesc}>
-                        <div className={profs.flexcolumn}>
-                            {Object.keys(booktitle).map(item => <p className={profs.title2}>{item}:</p>)}
-                        </div>
-                        <div className={profs.flexcolumn2}>
-                        {Object.values(booktitle).map(item => <p>{item}</p>)}
-                        </div>
                     </div>
                 </div>
             </div>

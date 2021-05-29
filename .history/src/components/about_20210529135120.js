@@ -7,7 +7,7 @@ const HP = {'character': 'Luna Lovegood', 'favSeries':'Prizoner of Azkaban'};
 const travel = {'have visited': ['UK ,', 'LA ,','AUS ,', 'Netherland'], 'wantToVist': ['Germany ,', 'UAE']};
 
 const cat = {'type': ['Munchkin ,', ' American Shorthair']}
-const booktitle = {'title': ['HarryPotter,' , ' Sherlock Holmes, ', ' Gone Girl']};
+const booktitle = {'title': ['HarryPotter ,' , ' Sherlock Holmes, ', ' Gone Girl']};
 
 const About = () => {
     return (

@@ -7,7 +7,7 @@ const HP = {'character': 'Luna Lovegood', 'favSeries':'Prizoner of Azkaban'};
 const travel = {'have visited': ['UK ,', 'LA ,','AUS ,', 'Netherland'], 'wantToVist': ['Germany ,', 'UAE']};
 
 const cat = {'type': ['Munchkin ,', ' American Shorthair']}
-const booktitle = {'title': ['HarryPotter,' , ' Sherlock Holmes, ', ' Gone Girl']};
+const booktitle = {'title': 'HarryPotter , Sherlock Holmes'};
 
 const About = () => {
     return (
@@ -86,10 +86,10 @@ const About = () => {
                     </div>
                     <div className={profs.likedesc}>
                         <div className={profs.flexcolumn}>
-                            {Object.keys(booktitle).map(item => <p className={profs.title2}>{item}:</p>)}
+                            {Object.keys(travel).map(item => <p className={profs.title2}>{item}:</p>)}
                         </div>
                         <div className={profs.flexcolumn2}>
-                        {Object.values(booktitle).map(item => <p>{item}</p>)}
+                        {Object.values(travel).map(item => <p>{item}</p>)}
                         </div>
                     </div>
                 </div>
