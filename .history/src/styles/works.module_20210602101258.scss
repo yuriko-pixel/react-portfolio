@@ -1,7 +1,7 @@
 
 
 .container {
-    width: 850px;
+    width: 750px;
     margin: 0 auto;
     background-image: url(../images/footprint.png);
     background-size: 100%;
@@ -9,13 +9,12 @@
 }
 
 .workCon {
-	width:			400px;
+	width:			350px;
 	height:			300px;
 	overflow:		hidden;
 	margin:			10px 8px 10px 16px;
 	position:		relative;	/* 相対位置指定 */
 }
-
 .workCon .caption {
 	font-size:		130%;
 	text-align: 		center;
@@ -53,9 +52,8 @@
 	/* 959px以下に適用されるCSS（タブレット用） */
 }
 @media screen and (max-width: 480px) {
-	
-	.workCon {
-		width:			300px;
+	.workcon {
+		margin: 10px;
 	}
 	.container {
         width: 300px;
