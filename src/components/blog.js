@@ -6,7 +6,7 @@ const Blog = () => {
     useEffect(() => {
         const getData = async() => {
             // const blogs =  await dataFetch();
-            fetch('https://www.googleapis.com/blogger/v3/blogs/6615732106570907108?key=AIzaSyC1HwiVEcPy_AtdEC39NRcvSpenRFsQdkY', {method:'GET', 
+            fetch('https://api.github.com/users/octocat/orgs', {method:'GET', 
             headers: {
                 // 'Authorization': 'Bearer ' + key,
                 'Content-Type': 'application/json',
@@ -18,7 +18,7 @@ const Blog = () => {
                 .then(response => response.json())
                 .then(json => {
                     console.log(json)
-                    setBlog(json);
+                    // setBlog(json);
                 })
           };
 
