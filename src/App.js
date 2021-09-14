@@ -9,6 +9,7 @@ import Footer from './components/footer'
 import works from './components/works'
 import contact from './components/contact'
 import qiita from './components/qiita'
+import blog from './components/blog'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route exact path='/' component={home}></Route>
         <Route path='/about' component={about}></Route>
         <Route path='/works' component={works}></Route>
+        <Route path='/blog' component={blog}></Route>
         <Route path='/qiita' component={qiita}></Route>
         <Route path='/contact' component={contact}></Route>
         <Route path='/work/:name'><WorkTemp /></Route>
