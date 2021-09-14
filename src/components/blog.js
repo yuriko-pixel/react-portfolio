@@ -6,7 +6,7 @@ const Blog = () => {
     useEffect(() => {
         const getData = async() => {
             // const blogs =  await dataFetch();
-            fetch('https://note.com/api/v2/creators/beljar731/contents?kind=note', {method:'GET', 
+            fetch('https://www.googleapis.com/blogger/v3/blogs/6615732106570907108/posts?key=AIzaSyC1HwiVEcPy_AtdEC39NRcvSpenRFsQdkY', {method:'GET', 
             headers: {
                 // 'Authorization': 'Bearer ' + key,
                 'Content-Type': 'application/json',
